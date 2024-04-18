@@ -7,6 +7,7 @@ import fmfcr from "/partrners/fmfcr.png";
 import ithad from "/partrners/ithad.png";
 import msahah from "/partrners/msahah.png";
 import nahdah from "/partrners/abs.png";
+import Partenrs from "./Partenrs";
 
 export default function Hero() {
 
@@ -43,33 +44,31 @@ export default function Hero() {
 
 
   return (
-    <main>
-      <div className="hero-container">
+    <>
+
+      <main>
+        <div className="hero-container">
 
 
-        <div className="imageContainer">
-          <img src="offers.png" alt="" />
-        </div>
-
-        <div className="hero-wrapper">
-          <p className="">في مركز<span style={{ color: "#fbbf5f" }}> مداد</span></p>
-          <h2>كل ماتحتاجه في عالم الاعلان والمطبوعات</h2>
-          <h6>بفريق من خبراء التصميم نحرص على دقة وجودة منجاتنا</h6>
-          <div className="buttons">
-
-            <a href="#projects"><button className="button">أبرز خدماتنـا</button></a>
+          <div className="imageContainer">
+            <img src="offers.png" alt="" />
           </div>
 
+          <div className="hero-wrapper">
+            <p className="">في مركز<span style={{ color: "#fbbf5f" }}> مداد</span></p>
+            <h2>كل ماتحتاجه في عالم الاعلان والمطبوعات</h2>
+            <h6>بفريق من خبراء التصميم نحرص على دقة وجودة منجاتنا</h6>
+            <div className="buttons">
+
+              <a href="#projects"><button className="button">أبرز خدماتنـا</button></a>
+            </div>
+
+          </div>
         </div>
-      </div>
 
-      <p className="text-[#fbbf5f] font-[Harmattan] text-[25px]">شركاء مداد</p>
-      <div className="parnters">
-        {imags.map((img) => (
-          <img key={img.id} src={img.img} alt="" />
-        ))}
-      </div>
 
-    </main>
+      </main>
+      <Partenrs imags={imags} />
+    </>
   )
 }
