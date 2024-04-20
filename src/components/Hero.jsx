@@ -68,7 +68,7 @@ export default function Hero() {
 
 
       </main>
-      <Partenrs imags={imags} />
+      {/* <Partenrs imags={imags} /> */}
     </>
   )
 }
