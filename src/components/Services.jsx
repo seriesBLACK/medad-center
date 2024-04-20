@@ -1,12 +1,27 @@
-import "../css/services.css"
+import "../css/services.css";
+import medalWood from "/services/medal.png";
+import medal from "/services/medal2.png";
+import cup from "/services/cup.png";
+import magic from "/services/cup2.png";
+import card from "/services/card.jpg";
+import stamp from "/services/stamp.png";
+import bag from "/services/bag.jpg";
+import board from "/services/lighting-board.png"
 
-export default function Services() {
+
+
+
+const Services = () => {
+
+
+
+
   return (
-    <section className='h-[100vh] bg-slate-400'>
+    <section className="services h-[100vh]">
+      <div className="right-side"></div>
+      <div className="left-side"></div>
+    </section>
+  );
+};
 
-      <svg className=" " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#170d1b" fill-opacity="1" d="M0,192L26.7,165.3C53.3,139,107,85,160,69.3C213.3,53,267,75,320,74.7C373.3,75,427,53,480,58.7C533.3,64,587,96,640,101.3C693.3,107,747,85,800,69.3C853.3,53,907,43,960,32C1013.3,21,1067,11,1120,26.7C1173.3,43,1227,85,1280,90.7C1333.3,96,1387,64,1413,48L1440,32L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
-      <svg className=" " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="0.6" d="M0,160L26.7,165.3C53.3,171,107,181,160,160C213.3,139,267,85,320,74.7C373.3,64,427,96,480,138.7C533.3,181,587,235,640,218.7C693.3,203,747,117,800,69.3C853.3,21,907,11,960,21.3C1013.3,32,1067,64,1120,96C1173.3,128,1227,160,1280,181.3C1333.3,203,1387,213,1413,218.7L1440,224L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg>
-
-    </section >
-  )
-}
+export default Services;
