@@ -1,14 +1,12 @@
 import "../css/services.scss";
-import { FaArrowLeft } from "react-icons/fa"
-import medalWood from "/services/medal.png";
 import medal from "/services/medal2.png";
 import cup from "/services/cup.png";
-import magic from "/services/cup2.png";
 import card from "/services/card.jpg";
-import stamp from "/services/stamp.png";
+import stamp from "/services/stamp.jpg";
 import bag from "/services/bag.jpg";
-import board from "/services/lighting-board.png"
+import board from "/services/lighting-board.png";
 import ServiceCard from "./ServiceCard";
+import smallBoard from "/services/board.png"
 
 
 
@@ -22,43 +20,60 @@ const Services = () => {
       text: "بجميع انواعها الخشبية والفضيه",
     },
     {
-      id: 1,
-      img: medal,
+      id: 2,
+      img: card,
       desc: "النحت على الميداليات",
       text: "بجميع انواعها الخشبية والفضيه",
     },
     {
-      id: 1,
-      img: medal,
-      desc: "النحت على الميداليات",
-      text: "بجميع انواعها الخشبية والفضيه",
+      id: 3,
+      img: cup,
+      desc: "الطباعه على الاكواب",
+      text: "بانواعها السحرية العاديه",
     },
     {
-      id: 1,
-      img: medal,
-      desc: "النحت على الميداليات",
-      text: "بجميع انواعها الخشبية والفضيه",
+      id: 4,
+      img: board,
+      desc: "لوحات ضوئية متكاملة",
+      text: "",
     },
+    {
+      id: 5,
+      img: bag,
+      desc: "الطباعة على الاكياس",
+      text: "البلاستيكية والكرتونيه",
+    },
+    {
+      id: 6,
+      img: stamp,
+      desc: "تنفيد الاختام بجميع انواعها",
+      text: "",
+    },
+    {
+      id: 7,
+      img: smallBoard,
+      desc: "لوحات ارشاديه",
+      text: "",
+    },
+
   ]
 
 
 
   return (
-    <section className="services h-[100vh] flex flex-nowrap">
-      <div className="left-side">
-        <ServiceCard items={items} />
-
-      </div>
-
+    <section className="services">
 
       <div className="right-side">
-        <h2>أبرز خدماتنا</h2>
-        <p>يتميز معملنا بأحدث الآلآت والطابعات المخصصة في الطباعة والنحت</p>
-        <div className=" relative">
-          <button>أطلب خدمتك الان</button>
-          <FaArrowLeft className=" absolute top-[0.5rem] left-2 h-6 text-white" />
-        </div>
+        <h2>أبرز الخدمات</h2>
+        <p>يتميز معمل <span style={{ color: "#fbbf5f" }}> مداد</span> بأحدث الآلآت والطابعات المخصصة في الطباعة والنحت</p>
       </div>
+
+      <div className="flex gap-4 flex-wrap justify-around">
+        {items.map((item) => (
+          <ServiceCard items={item} />
+        ))}
+      </div>
+
     </section>
   );
 };

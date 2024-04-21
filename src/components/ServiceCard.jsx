@@ -1,18 +1,17 @@
 
 export default function ServiceCard({ items }) {
   return (
-    <div className="h-[452px] w-[314px] bg-[#D9D9D9] rounded-[14px] flex flex-col justify-between p-[8px]">
-      {items.map((item) => (
-        <>
-          <img className="rounded-[14px] h-[299px] w-[298px]" key={item.id} src={item.img} alt="" />
-          <h4 className=" font-[Cairo] text-end text-black text-[24px] font-medium">{item.desc}</h4>
-          <p className="text-[#575454] text-end text-[14px] font-[Cairo]">{item.text}</p>
-          <button className="text-[#D5D7DC] bg-black rounded-[14px] font-[Cairo] font-bold w-[298px] h-[36px]">أطلب الخدمة</button>
-        </>
+
+    <div className="h-[452px] w-[314px] bg-[#5f1d1d11]  rounded-[14px] flex flex-col justify-between p-[8px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] mb-3">
 
 
+      <img className="rounded-[14px] h-[299px] w-[298px]" key={items.id} src={items.img} alt="" />
+      <h4 className=" font-[Cairo] text-end text-white text-[24px] font-medium">{items.desc}</h4>
+      <p className="text-gray-400 text-end text-[14px] font-[Cairo]">{items.text}</p>
+      <button className="text-white bg-[#313d7c] rounded-[14px] font-[Cairo] font-bold w-[298px] h-[36px]">أطلب الخدمة</button>
 
-      ))}
+
     </div>
+
   )
 }
