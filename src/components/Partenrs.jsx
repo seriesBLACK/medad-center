@@ -1,10 +1,10 @@
-import abs from "../../public/partrners/abs.png";
-import aden from "../../public/partrners/aden.png";
-import adra from "../../public/partrners/adra.png";
-import fmfcr from "../../public/partrners/fmfcr.png";
-import ithad from "../../public/partrners/ithad.png";
-import msahah from "../../public/partrners/msahah.png";
-import nahdah from "../../public/partrners/abs.png";
+import abs from "/partrners/abs.png";
+import aden from "/partrners/aden.png";
+import adra from "/partrners/adra.png";
+import fmfcr from "/partrners/fmfcr.png";
+import ithad from "/partrners/ithad.png";
+import msahah from "/partrners/msahah.png";
+import nahdah from "/partrners/abs.png";
 
 
 export default function Partenrs() {
@@ -37,11 +37,15 @@ export default function Partenrs() {
       id: 7,
       img: nahdah
     }
-  ]
+  ];
+
+
+
   return (
-    <div className="my-7">
+    <div className="mb-[50px]">
       <p className="text-[#b2904c] font-[Harmattan] text-[32px] text-center">شركاء مداد</p>
       <div className="parnters">
+        {/* css in hero.css file */}
         {imags.map((img) => (
           <img key={img.id} src={img.img} alt="" />
         ))}

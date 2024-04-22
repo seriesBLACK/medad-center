@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  background-image: url("/medad.jpg");
   margin: 0;
   padding: 0;
 }

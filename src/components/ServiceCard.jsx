@@ -6,9 +6,9 @@ export default function ServiceCard({ items }) {
 
 
       <img className="rounded-[14px] h-[299px] w-[298px]" key={items.id} src={items.img} alt="" />
-      <h4 className=" font-[Cairo] text-end text-white text-[24px] font-medium">{items.desc}</h4>
-      <p className="text-gray-400 text-end text-[14px] font-[Cairo]">{items.text}</p>
-      <button className="text-black bg-white rounded-[14px] font-[Cairo] font-bold w-[298px] h-[36px]">أطلب الخدمة</button>
+      <h4 key={items.desc} className=" font-[Cairo] text-end text-white text-[24px] font-medium">{items.desc}</h4>
+      <p key={items.text} className="text-gray-400 text-end text-[14px] font-[Cairo]">{items.text}</p>
+      <button key={items.img} className="text-black bg-white rounded-[14px] font-[Cairo] font-bold w-[298px] h-[36px]">أطلب الخدمة</button>
 
 
     </div>

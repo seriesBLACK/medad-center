@@ -1,0 +1,31 @@
+.gallery {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+
+
+
+  .logos-slide {
+
+    animation: 14s slide infinite linear;
+
+    img {
+      aspect-ratio: 1;
+      min-width: 217px;
+    }
+  }
+}
+
+
+
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-700%);
+  }
+}
