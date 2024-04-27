@@ -17,7 +17,6 @@ main {
 }
 
 .hero-wrapper {
-  border-color: lightblue;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -56,6 +55,17 @@ main {
   font-family: "Cairo", sans-serif;
 }
 
+.hero-button {
+  height: 40px;
+  padding: 0 15px;
+  font-family: "Cairo", sans-serif;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgb(52, 52, 240);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
 
 
 .imageContainer {
@@ -84,8 +94,34 @@ main {
 }
 
 @media (max-width: 600px) {
-  .hero-container {
+  /* .hero-container {
+    flex-direction: column;
+  } */
+
+  .imageContainer {
     display: none;
+  }
+
+  .hero-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-container {
+    height: 150vh;
+  }
+
+  .hero-wrapper {
+    margin-top: 43px;
+  }
+
+  .hero-wrapper h2 {
+    font-size: 43px;
+  }
+
+  .hero-wrapper h6 {
+    font-size: 16px;
   }
 
 }

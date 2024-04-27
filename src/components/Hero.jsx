@@ -1,9 +1,10 @@
+import { useState } from "react";
 import "../css/hero.css";
 import Partenrs from "./Partenrs";
 
 
 export default function Hero() {
-
+  const [width, setWidth] = useState(window.innerWidth)
 
 
 
@@ -24,7 +25,7 @@ export default function Hero() {
             <h6>بفريق من خبراء التصميم نحرص على دقة وجودة منجاتنا</h6>
             <div className="buttons">
 
-              <a href="#projects"><button className="button">أبرز خدماتنـا</button></a>
+              <a href={width > 600 ? '#services' : '#footer'}><button className="hero-button">{width > 600 ? "أبرز خدماتنـا" : "تواصل معنا"}</button></a>
             </div>
 
           </div>

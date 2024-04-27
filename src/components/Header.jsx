@@ -6,7 +6,7 @@ export default function Header() {
 
       <a href="#footer">
 
-        <button className="button">تواصل معنا</button>
+        <button className="header-button">تواصل معنا</button>
       </a>
 
 

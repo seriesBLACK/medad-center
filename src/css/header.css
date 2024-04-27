@@ -58,7 +58,7 @@ header nav a {
   gap: 8%;
 }
 
-.button {
+.header-button {
   height: 40px;
   padding: 0 15px;
   font-family: "Cairo", sans-serif;
@@ -103,7 +103,7 @@ header nav a {
 
   }
 
-  .button {
+  .header-button {
     display: none;
   }
 }
