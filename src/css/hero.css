@@ -55,31 +55,7 @@ main {
   font-family: "Cairo", sans-serif;
 }
 
-.scroll-img {
-  width: 40px;
-  margin-right: 12px;
-  position: relative;
-  animation: upDown 1.5s ease-in-out infinite;
-}
 
-@keyframes upDown {
-  0% {
-    top: 0;
-    opacity: 0;
-  }
-
-  50% {
-    top: 16px;
-    opacity: 1;
-    /* adjust distance */
-  }
-
-  100% {
-    top: 0;
-    opacity: 0;
-  }
-
-}
 
 .imageContainer {
   width: 50%;

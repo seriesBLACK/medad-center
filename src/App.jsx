@@ -1,3 +1,4 @@
+import About from "./components/About";
 import FeaturedWork from "./components/FeaturedWork";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -11,6 +12,7 @@ export default function App() {
     <>
       <Header />
       <Hero />
+      <About />
       <Partenrs />
       <Services />
       <FeaturedWork />

@@ -1,0 +1,29 @@
+#about {
+
+  h3,
+  h1 {
+    color: white;
+    font-family: "Cairo", sans-serif;
+    font-size: 2rem;
+
+  }
+
+  p {
+    font-family: "Harmattan", sans-serif;
+    color: rgba(255, 255, 255, 0.717);
+    font-size: 1.2rem;
+  }
+
+  .about-img {
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    background-image: url("/about-img.jpg");
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: brightness(0.3);
+  }
+}

@@ -45,14 +45,14 @@ export default function FeaturedWork() {
   return (
     <div className='flex overflow-hidden relative'>
       <div className="h-[100%] w-[250px] absolute right-0 top-0 z-10 bg-gradient-to-r from-[#00000000] to-white"></div>
-      <div className='bg-white gallery'>
+      <div className='gallery'>
         {imags.map((img) => (
           <div className="logos-slide">
             <img className="" src={img.img} key={img.id} />
           </div >
         ))}
       </div>
-      <div className='bg-white gallery'>
+      <div className='gallery'>
         {imags.map((img) => (
           <div className="logos-slide">
             <img className="" src={img.img} key={img.id} />
