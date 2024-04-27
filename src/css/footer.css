@@ -1,0 +1,9 @@
+#footer {
+  background-image: url("/medad.jpg");
+
+  .topSection {
+    color: white;
+    font-size: 22px;
+    font-family: "Cairo";
+  }
+}
