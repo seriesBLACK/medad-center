@@ -1,5 +1,6 @@
 main {
-  height: 100dvh;
+
+  height: 122dvh;
   /*114 is the header height + margin*/
   display: flex;
   flex-direction: column;
@@ -70,8 +71,9 @@ main {
 .parnters {
   gap: 12px;
   display: flex;
-  justify-content: center;
-  height: 20%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 30%;
   width: 100%;
   align-items: center;
 }
@@ -79,4 +81,11 @@ main {
 .parnters img {
   aspect-ratio: 1;
   height: 150px;
+}
+
+@media (max-width: 600px) {
+  .hero-container {
+    display: none;
+  }
+
 }

@@ -10,12 +10,14 @@ header {
 
 }
 
+
 .search-container {
   position: relative;
-
 }
 
 .search {
+
+
   padding: 0 0.625rem;
   border-radius: 0.5rem;
   border: solid 1px #D1D5DB;
@@ -66,4 +68,42 @@ header nav a {
   color: white;
   font-weight: 700;
   cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+  .header-img-search {
+    width: 80%;
+    justify-content: space-between;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .header-svg {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-img-search {
+    width: 100%;
+    justify-content: space-around;
+    gap: 2%;
+  }
+
+  .header-img-search img {
+    aspect-ratio: 1.59;
+    width: 30%;
+  }
+
+  header nav a {
+    font-size: 12px;
+
+  }
+
+  .button {
+    display: none;
+  }
 }

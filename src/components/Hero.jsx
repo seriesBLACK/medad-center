@@ -1,4 +1,5 @@
 import "../css/hero.css";
+import Partenrs from "./Partenrs";
 
 
 export default function Hero() {
@@ -29,7 +30,7 @@ export default function Hero() {
           </div>
         </div>
 
-
+        <Partenrs />
       </main>
 
     </>

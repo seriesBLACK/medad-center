@@ -61,7 +61,7 @@ const Services = () => {
 
 
   return (
-    <section className="services">
+    <section id="services" className="services">
 
       <div className="right-side">
         <h2>أبرز الخدمات</h2>

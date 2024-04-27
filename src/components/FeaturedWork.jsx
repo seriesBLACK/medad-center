@@ -43,23 +43,27 @@ export default function FeaturedWork() {
 
 
   return (
-    <div className='flex overflow-hidden relative'>
-      <div className="h-[100%] w-[250px] absolute right-0 top-0 z-10 bg-gradient-to-r from-[#00000000] to-white"></div>
-      <div className='gallery'>
-        {imags.map((img) => (
-          <div className="logos-slide">
-            <img className="" src={img.img} key={img.id} />
-          </div >
-        ))}
+    <>
+      <h1 className="text-center text-[3rem] font-[Cairo] text-[#252524] font-bold absolute right-[50%] translate-x-[50%]">أبرز الاعمال</h1>
+      <div className='flex overflow-hidden relative'>
+        <div className="h-[100%] w-[250px] absolute right-0 top-0 z-10 bg-gradient-to-r from-[#00000000] to-white"></div>
+
+        <div className='gallery'>
+          {imags.map((img) => (
+            <div className="logos-slide">
+              <img className="" src={img.img} key={img.id} />
+            </div >
+          ))}
+        </div>
+        <div className='gallery'>
+          {imags.map((img) => (
+            <div className="logos-slide">
+              <img className="" src={img.img} key={img.id} />
+            </div >
+          ))}
+        </div>
+        <div className="h-[100%] w-[250px] absolute top-0 bg-gradient-to-l from-[#00000000] to-white"></div>
       </div>
-      <div className='gallery'>
-        {imags.map((img) => (
-          <div className="logos-slide">
-            <img className="" src={img.img} key={img.id} />
-          </div >
-        ))}
-      </div>
-      <div className="h-[100%] w-[250px] absolute top-0 bg-gradient-to-l from-[#00000000] to-white"></div>
-    </div>
+    </>
   )
 }

@@ -9,23 +9,23 @@ export default function About() {
       </div>
 
 
-      <div className="absolute w-full h-full">
+      <div className="absolute w-full h-full flex flex-col items-center">
+        <h1 className="text-center">عن<span style={{ color: "#fbbf5f" }}> مداد</span></h1>
 
-
-        <div className="text-center">
+        <div className="text-end w-[80%]">
           <h1 className="">مركز مداد للطباعة والإعلان</h1>
           <p className="">تأسس مركز مداد في مدينة عدن عام 2012 ونتميز بخبرتنا الطويلة في مجال المطبوعات ويقع المركز في مديرية المعلا خلف مطعم حلب</p>
         </div>
 
 
-        <div className="">
+        <div className="w-[80%] mt-5">
 
-          <div className="text-end w-[80%]">
+          <div className="text-end">
             <div className="flex justify-end items-center gap-3">
-              <h3>رسالتنا</h3>
+              <h3>هدفنا</h3>
               <GoGoal className="text-white w-[32px] h-[32px]" />
-
             </div>
+
             <p>العمل على مواكبة تطورات وإبداعات عالم الإعلان وتقديمها لعملائنا بما يتناسب مع متطلباتهم وإقامة علاقة شراكة إستراتيجية طويلة المدى من خلال تلبية كافة احتياجاتهم بأعلى درجات الإحترافية.</p>
             <div className="flex justify-end items-center gap-3">
               <h3>رؤيتنا</h3>

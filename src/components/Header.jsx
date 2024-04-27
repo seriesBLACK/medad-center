@@ -4,13 +4,16 @@ export default function Header() {
   return (
     <header>
 
-      <button className="button">تواصل معنا</button>
+      <a href="#footer">
+
+        <button className="button">تواصل معنا</button>
+      </a>
 
 
       <div className="header-img-search">
         <nav>
-          <a href="">عن مداد</a>
-          <a href="">الخدمات</a>
+          <a href="#about">عن مداد</a>
+          <a href="#services">الخدمات</a>
           <a href="">أعمالنا</a>
         </nav>
 
