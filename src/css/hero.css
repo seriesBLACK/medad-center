@@ -1,6 +1,6 @@
 main {
 
-  height: 100dvh;
+  height: 125vh;
   /*114 is the header height + margin*/
   display: flex;
   flex-direction: column;
@@ -93,6 +93,10 @@ main {
 }
 
 @media (max-width: 600px) {
+  main {
+    height: 100dvh;
+  }
+
   .parnters {
     gap: 6px;
     height: 50%;
