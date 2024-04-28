@@ -6,12 +6,24 @@
 
   .right-side {
     text-align: center;
+    text-align: center;
 
     h2 {
       color: white;
       font-family: "Harmattan", sans-serif;
       font-weight: 700;
       font-size: 3.8rem;
+    }
+
+    @media (max-width: 640px) {
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 12px;
+        word-wrap: break-word;
+      }
     }
 
     p {

@@ -4,12 +4,12 @@ import { GoGoal } from "react-icons/go"
 
 export default function About() {
   return (
-    <section id='about' className='h-[50vh] relative'>
+    <section id='about' className='h-[50vh] max-sm:h-[60vh] relative'>
       <div className="about-img">
       </div>
 
 
-      <div className="absolute w-full h-full flex flex-col items-center">
+      <div className="absolute w-full h-full flex flex-col items-center max-sm:justify-evenly">
         <h1 className="text-center">عن<span style={{ color: "#fbbf5f" }}> مداد</span></h1>
 
         <div className="text-end w-[80%]">

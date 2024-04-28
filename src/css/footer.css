@@ -7,3 +7,16 @@
     font-family: "Cairo";
   }
 }
+
+
+@media (max-width: 640px) {
+  #footer .topSection {
+    font-size: 16px;
+
+  }
+
+  #footer p {
+    font-size: 10px;
+  }
+
+}

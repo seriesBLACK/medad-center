@@ -42,7 +42,7 @@ export default function Partenrs() {
 
 
   return (
-    <div className="my-[100px]">
+    <div className="my-[100px] max-sm:my-[50px]">
       <p className="text-[#b2904c] font-[Harmattan] text-[32px] text-center">شركاء مداد</p>
       <div className="parnters">
         {/* css in hero.css file */}

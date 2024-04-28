@@ -64,7 +64,7 @@ const Services = () => {
     <section id="services" className="services">
 
       <div className="right-side">
-        <h2>أبرز الخدمات</h2>
+        <h2 className="">أبرز الخدمات</h2>
         <p>يتميز معمل <span style={{ color: "#fbbf5f" }}> مداد</span> بأحدث الآلآت والطابعات المخصصة في الطباعة والنحت</p>
       </div>
 

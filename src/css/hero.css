@@ -83,7 +83,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 30%;
   width: 100%;
   align-items: center;
 }
@@ -94,9 +93,14 @@ main {
 }
 
 @media (max-width: 600px) {
-  /* .hero-container {
-    flex-direction: column;
-  } */
+  .parnters {
+    gap: 6px;
+    height: 50%;
+  }
+
+  .parnters img {
+    height: 60px;
+  }
 
   .imageContainer {
     display: none;
