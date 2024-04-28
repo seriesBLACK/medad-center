@@ -4,7 +4,6 @@ import adra from "/partrners/adra.png";
 import fmfcr from "/partrners/fmfcr.png";
 import ithad from "/partrners/ithad.png";
 import msahah from "/partrners/msahah.png";
-import nahdah from "/partrners/abs.png";
 
 
 export default function Partenrs() {
@@ -33,10 +32,7 @@ export default function Partenrs() {
       id: 6,
       img: msahah
     },
-    {
-      id: 7,
-      img: nahdah
-    }
+
   ];
 
 
