@@ -1,6 +1,6 @@
 main {
 
-  height: 122dvh;
+  height: 100dvh;
   /*114 is the header height + margin*/
   display: flex;
   flex-direction: column;
