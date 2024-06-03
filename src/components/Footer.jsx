@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa"
 
 export default function Footer() {
   return (
-    <footer id="footer" className='w-full h-[50vh] flex items-center justify-center flex-col'>
+    <footer id="footer" className='w-full h-[50vh] flex items-center justify-center flex-col relative'>
       <div className="w-[80%] max-sm:w-[100%]  h-[60%] flex justify-between items-center topSection max-sm:flex-col">
 
         <div className=" w-[60%] max-sm:w-[100%] max-sm:justify-evenly max-sm:items-center h-[100%] flex flex-col justify-center gap-7">
@@ -50,7 +50,15 @@ export default function Footer() {
 
       </div>
       <div className="w-[60%] h-[1px] bg-[#9797978c] mt-5"></div>
-      <p className=" text-[17px] text-gray-400">جميع الحقوق محفوظة 2024</p>
+      <div className="bg-transparent absolute bottom-0">
+        <a href="https://aw-portfolio-3-0.vercel.app/">
+
+          <p className="text-white font-thin">&copy; 2024 Design & developed by <span className="underline font-thin bg-black rounded-full px-1">AW</span></p>
+        </a>
+
+
+      </div>
     </footer>
   )
 }
+
